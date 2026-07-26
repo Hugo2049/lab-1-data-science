@@ -1,0 +1,22 @@
+serie,prueba,estadistico,p_valor,lags,n,critico_5pct,conclusion
+Total,Serie sin diferenciar,-2.236,0.1936,12,134,-2.883,No estacionaria
+Total,Primera diferencia (d=1),-3.1,0.0265,11,134,-2.883,Estacionaria
+Total,"Primera diferencia + diferencia estacional (d=1, D=1)",-6.148,0.0,11,122,-2.886,Estacionaria
+Via_Aérea,Serie sin diferenciar,-4.018,0.0013,3,143,-2.882,Estacionaria
+Via_Aérea,Primera diferencia (d=1),-3.214,0.0192,11,134,-2.883,Estacionaria
+Via_Aérea,"Primera diferencia + diferencia estacional (d=1, D=1)",-6.396,0.0,11,122,-2.886,Estacionaria
+Via_Terrestre,Serie sin diferenciar,-1.442,0.5619,12,134,-2.883,No estacionaria
+Via_Terrestre,Primera diferencia (d=1),-3.46,0.0091,11,134,-2.883,Estacionaria
+Via_Terrestre,"Primera diferencia + diferencia estacional (d=1, D=1)",-5.626,0.0,11,122,-2.886,Estacionaria
+Via_Marítima,Serie sin diferenciar,4.889,1.0,12,134,-2.883,No estacionaria
+Via_Marítima,Primera diferencia (d=1),-1.415,0.575,13,132,-2.884,No estacionaria
+Via_Marítima,"Primera diferencia + diferencia estacional (d=1, D=1)",-2.433,0.1327,10,123,-2.885,No estacionaria
+Pais_ElSalvador,Serie sin diferenciar,-1.697,0.4325,10,136,-2.883,No estacionaria
+Pais_ElSalvador,Primera diferencia (d=1),-5.942,0.0,9,136,-2.883,Estacionaria
+Pais_ElSalvador,"Primera diferencia + diferencia estacional (d=1, D=1)",-5.23,0.0,11,122,-2.886,Estacionaria
+Pais_Honduras,Serie sin diferenciar,-3.709,0.004,14,132,-2.884,Estacionaria
+Pais_Honduras,Primera diferencia (d=1),-5.372,0.0,10,135,-2.883,Estacionaria
+Pais_Honduras,"Primera diferencia + diferencia estacional (d=1, D=1)",-6.238,0.0,11,122,-2.886,Estacionaria
+Pais_EstadosUnidos,Serie sin diferenciar,-2.861,0.0501,12,134,-2.883,No estacionaria
+Pais_EstadosUnidos,Primera diferencia (d=1),-3.047,0.0307,11,134,-2.883,Estacionaria
+Pais_EstadosUnidos,"Primera diferencia + diferencia estacional (d=1, D=1)",-5.46,0.0,11,122,-2.886,Estacionaria

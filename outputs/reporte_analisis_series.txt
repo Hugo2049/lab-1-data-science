@@ -1,0 +1,123 @@
+==============================================================================
+SERIE: Total mensual de viajeros internacionales  [categoria: Total]
+==============================================================================
+a) Inicio: 2009-01   Fin: 2026-06   Frecuencia: mensual (MS)   Observaciones: 210 (entrenamiento 147, prueba 63)
+b) Crecimiento del nivel medio entre los primeros y los ultimos 24 meses previos a la pandemia: +119.0%. Piso durante la pandemia: 9,779 viajeros.
+c) Fuerza de tendencia (STL): 0.789   Fuerza estacional (STL, todo el entrenamiento): 0.394
+   Desviacion estandar anual: minimo 22,760, maximo 158,225 (razon 7.0x) -> la dispersion cambia con el nivel de la serie.
+d) Coeficiente de variacion en niveles: 0.430; en escala logaritmica: 0.057. Transformacion elegida: logaritmica.
+e) Prueba de Dickey-Fuller aumentada sobre el tramo de entrenamiento:
+   Serie sin diferenciar                                estadistico=  -2.236  p=0.1936  -> No estacionaria
+   Primera diferencia (d=1)                             estadistico=  -3.100  p=0.0265  -> Estacionaria
+   Primera diferencia + diferencia estacional (d=1, D=1) estadistico=  -6.148  p=0.0000  -> Estacionaria
+   KPSS sobre la serie sin diferenciar: estadistico=0.168  p=0.1000 -> Estacionaria
+   Fuerza estacional medida antes de la pandemia: 0.837 (la ventana completa la subestima por el desplome de 2020).
+   Diferenciaciones sugeridas: D=1 (estacional, periodo 12) y d=1 (regular), determinadas en ese orden.
+
+==============================================================================
+SERIE: Via de ingreso: Aerea  [categoria: Vias]
+==============================================================================
+a) Inicio: 2009-01   Fin: 2026-06   Frecuencia: mensual (MS)   Observaciones: 210 (entrenamiento 147, prueba 63)
+b) Crecimiento del nivel medio entre los primeros y los ultimos 24 meses previos a la pandemia: +53.3%. Piso durante la pandemia: 489 viajeros.
+c) Fuerza de tendencia (STL): 0.791   Fuerza estacional (STL, todo el entrenamiento): 0.575
+   Desviacion estandar anual: minimo 10,935, maximo 46,009 (razon 4.2x) -> la dispersion cambia con el nivel de la serie.
+d) Coeficiente de variacion en niveles: 0.330; en escala logaritmica: 0.082. Transformacion elegida: logaritmica.
+e) Prueba de Dickey-Fuller aumentada sobre el tramo de entrenamiento:
+   Serie sin diferenciar                                estadistico=  -4.018  p=0.0013  -> Estacionaria
+   Primera diferencia (d=1)                             estadistico=  -3.214  p=0.0192  -> Estacionaria
+   Primera diferencia + diferencia estacional (d=1, D=1) estadistico=  -6.396  p=0.0000  -> Estacionaria
+   KPSS sobre la serie sin diferenciar: estadistico=0.248  p=0.1000 -> Estacionaria
+   Fuerza estacional medida antes de la pandemia: 0.875 (la ventana completa la subestima por el desplome de 2020).
+   Diferenciaciones sugeridas: D=1 (estacional, periodo 12) y d=1 (regular), determinadas en ese orden.
+
+==============================================================================
+SERIE: Via de ingreso: Terrestre  [categoria: Vias]
+==============================================================================
+a) Inicio: 2009-01   Fin: 2026-06   Frecuencia: mensual (MS)   Observaciones: 210 (entrenamiento 147, prueba 63)
+b) Crecimiento del nivel medio entre los primeros y los ultimos 24 meses previos a la pandemia: +184.7%. Piso durante la pandemia: 5,715 viajeros.
+c) Fuerza de tendencia (STL): 0.684   Fuerza estacional (STL, todo el entrenamiento): 0.126
+   Desviacion estandar anual: minimo 12,347, maximo 107,681 (razon 8.7x) -> la dispersion cambia con el nivel de la serie.
+d) Coeficiente de variacion en niveles: 0.517; en escala logaritmica: 0.062. Transformacion elegida: logaritmica.
+e) Prueba de Dickey-Fuller aumentada sobre el tramo de entrenamiento:
+   Serie sin diferenciar                                estadistico=  -1.442  p=0.5619  -> No estacionaria
+   Primera diferencia (d=1)                             estadistico=  -3.460  p=0.0091  -> Estacionaria
+   Primera diferencia + diferencia estacional (d=1, D=1) estadistico=  -5.626  p=0.0000  -> Estacionaria
+   KPSS sobre la serie sin diferenciar: estadistico=0.210  p=0.1000 -> Estacionaria
+   Fuerza estacional medida antes de la pandemia: 0.754 (la ventana completa la subestima por el desplome de 2020).
+   Diferenciaciones sugeridas: D=1 (estacional, periodo 12) y d=1 (regular), determinadas en ese orden.
+
+==============================================================================
+SERIE: Via de ingreso: Maritima  [categoria: Vias]
+==============================================================================
+a) Inicio: 2009-01   Fin: 2026-06   Frecuencia: mensual (MS)   Observaciones: 210 (entrenamiento 147, prueba 63)
+b) Crecimiento del nivel medio entre los primeros y los ultimos 24 meses previos a la pandemia: +51.3%. Piso durante la pandemia: 0 viajeros.
+c) Fuerza de tendencia (STL): 0.309   Fuerza estacional (STL, todo el entrenamiento): 0.610
+   Desviacion estandar anual: minimo 0, maximo 9,569 (razon 9568646102893.8x) -> la dispersion cambia con el nivel de la serie.
+d) Coeficiente de variacion en niveles: 0.868; en escala logaritmica: 0.375. Transformacion elegida: logaritmica (log1p por la presencia de meses en cero).
+e) Prueba de Dickey-Fuller aumentada sobre el tramo de entrenamiento:
+   Serie sin diferenciar                                estadistico=   4.889  p=1.0000  -> No estacionaria
+   Primera diferencia (d=1)                             estadistico=  -1.415  p=0.5750  -> No estacionaria
+   Primera diferencia + diferencia estacional (d=1, D=1) estadistico=  -2.433  p=0.1327  -> No estacionaria
+   KPSS sobre la serie sin diferenciar: estadistico=0.666  p=0.0167 -> No estacionaria
+   Fuerza estacional medida antes de la pandemia: 0.229 (la ventana completa la subestima por el desplome de 2020).
+   Diferenciaciones sugeridas: D=0 (estacional, periodo 12) y d=1 (regular), determinadas en ese orden.
+
+==============================================================================
+SERIE: Pais de residencia: El Salvador  [categoria: Paises]
+==============================================================================
+a) Inicio: 2009-01   Fin: 2026-06   Frecuencia: mensual (MS)   Observaciones: 210 (entrenamiento 147, prueba 63)
+b) Crecimiento del nivel medio entre los primeros y los ultimos 24 meses previos a la pandemia: +192.4%. Piso durante la pandemia: 0 viajeros.
+c) Fuerza de tendencia (STL): 0.639   Fuerza estacional (STL, todo el entrenamiento): 0.152
+   Desviacion estandar anual: minimo 3,087, maximo 51,797 (razon 16.8x) -> la dispersion cambia con el nivel de la serie.
+d) Coeficiente de variacion en niveles: 0.548; en escala logaritmica: 0.198. Transformacion elegida: logaritmica (log1p por la presencia de meses en cero).
+e) Prueba de Dickey-Fuller aumentada sobre el tramo de entrenamiento:
+   Serie sin diferenciar                                estadistico=  -1.697  p=0.4325  -> No estacionaria
+   Primera diferencia (d=1)                             estadistico=  -5.942  p=0.0000  -> Estacionaria
+   Primera diferencia + diferencia estacional (d=1, D=1) estadistico=  -5.230  p=0.0000  -> Estacionaria
+   KPSS sobre la serie sin diferenciar: estadistico=0.233  p=0.1000 -> Estacionaria
+   Fuerza estacional medida antes de la pandemia: 0.681 (la ventana completa la subestima por el desplome de 2020).
+   Diferenciaciones sugeridas: D=1 (estacional, periodo 12) y d=1 (regular), determinadas en ese orden.
+
+==============================================================================
+SERIE: Pais de residencia: Honduras  [categoria: Paises]
+==============================================================================
+a) Inicio: 2009-01   Fin: 2026-06   Frecuencia: mensual (MS)   Observaciones: 210 (entrenamiento 147, prueba 63)
+b) Crecimiento del nivel medio entre los primeros y los ultimos 24 meses previos a la pandemia: +105.9%. Piso durante la pandemia: 0 viajeros.
+c) Fuerza de tendencia (STL): 0.663   Fuerza estacional (STL, todo el entrenamiento): 0.386
+   Desviacion estandar anual: minimo 1,152, maximo 7,325 (razon 6.4x) -> la dispersion cambia con el nivel de la serie.
+d) Coeficiente de variacion en niveles: 0.439; en escala logaritmica: 0.195. Transformacion elegida: logaritmica (log1p por la presencia de meses en cero).
+e) Prueba de Dickey-Fuller aumentada sobre el tramo de entrenamiento:
+   Serie sin diferenciar                                estadistico=  -3.709  p=0.0040  -> Estacionaria
+   Primera diferencia (d=1)                             estadistico=  -5.372  p=0.0000  -> Estacionaria
+   Primera diferencia + diferencia estacional (d=1, D=1) estadistico=  -6.238  p=0.0000  -> Estacionaria
+   KPSS sobre la serie sin diferenciar: estadistico=0.253  p=0.1000 -> Estacionaria
+   Fuerza estacional medida antes de la pandemia: 0.597 (la ventana completa la subestima por el desplome de 2020).
+   Diferenciaciones sugeridas: D=1 (estacional, periodo 12) y d=1 (regular), determinadas en ese orden.
+
+==============================================================================
+SERIE: Pais de residencia: Estados Unidos  [categoria: Paises]
+==============================================================================
+a) Inicio: 2009-01   Fin: 2026-06   Frecuencia: mensual (MS)   Observaciones: 210 (entrenamiento 147, prueba 63)
+b) Crecimiento del nivel medio entre los primeros y los ultimos 24 meses previos a la pandemia: +51.9%. Piso durante la pandemia: 0 viajeros.
+c) Fuerza de tendencia (STL): 0.530   Fuerza estacional (STL, todo el entrenamiento): 0.512
+   Desviacion estandar anual: minimo 5,435, maximo 14,508 (razon 2.7x) -> la dispersion cambia con el nivel de la serie.
+d) Coeficiente de variacion en niveles: 0.396; en escala logaritmica: 0.194. Transformacion elegida: logaritmica (log1p por la presencia de meses en cero).
+e) Prueba de Dickey-Fuller aumentada sobre el tramo de entrenamiento:
+   Serie sin diferenciar                                estadistico=  -2.861  p=0.0501  -> No estacionaria
+   Primera diferencia (d=1)                             estadistico=  -3.047  p=0.0307  -> Estacionaria
+   Primera diferencia + diferencia estacional (d=1, D=1) estadistico=  -5.460  p=0.0000  -> Estacionaria
+   KPSS sobre la serie sin diferenciar: estadistico=0.316  p=0.1000 -> Estacionaria
+   Fuerza estacional medida antes de la pandemia: 0.926 (la ventana completa la subestima por el desplome de 2020).
+   Diferenciaciones sugeridas: D=1 (estacional, periodo 12) y d=1 (regular), determinadas en ese orden.
+
+==============================================================================
+RESUMEN DEL DIAGNOSTICO
+==============================================================================
+             serie  fuerza_tendencia  fuerza_estacional  fuerza_estacional_prepandemia  cv_niveles  usar_log  d  D
+             Total             0.789              0.394                          0.837    0.429682      True  1  1
+         Via_Aérea             0.791              0.575                          0.875    0.329954      True  1  1
+     Via_Terrestre             0.684              0.126                          0.754    0.516642      True  1  1
+      Via_Marítima             0.309              0.610                          0.229    0.867749      True  1  0
+   Pais_ElSalvador             0.639              0.152                          0.681    0.547917      True  1  1
+     Pais_Honduras             0.663              0.386                          0.597    0.439112      True  1  1
+Pais_EstadosUnidos             0.530              0.512                          0.926    0.395737      True  1  1

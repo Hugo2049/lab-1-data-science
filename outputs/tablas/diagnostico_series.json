@@ -1,0 +1,394 @@
+[
+  {
+    "serie": "Total",
+    "titulo": "Total mensual de viajeros internacionales",
+    "categoria": "Total",
+    "inicio": "2009-01",
+    "fin": "2026-06",
+    "frecuencia": "Mensual (MS)",
+    "n_obs": 210,
+    "n_train": 147,
+    "n_test": 63,
+    "media_train": 237120.91144306015,
+    "cv_niveles": 0.42968150884622813,
+    "ratio_dispersion": 6.951783085714156,
+    "fuerza_tendencia": 0.789,
+    "fuerza_estacional": 0.394,
+    "fuerza_estacional_prepandemia": 0.837,
+    "crecimiento_prepandemia_pct": 119.02979695788241,
+    "usar_log": true,
+    "log1p": false,
+    "d": 1,
+    "D": 1,
+    "adf": [
+      {
+        "prueba": "Serie sin diferenciar",
+        "estadistico": -2.236,
+        "p_valor": 0.1936,
+        "lags": 12,
+        "n": 134,
+        "critico_5pct": -2.883,
+        "conclusion": "No estacionaria"
+      },
+      {
+        "prueba": "Primera diferencia (d=1)",
+        "estadistico": -3.1,
+        "p_valor": 0.0265,
+        "lags": 11,
+        "n": 134,
+        "critico_5pct": -2.883,
+        "conclusion": "Estacionaria"
+      },
+      {
+        "prueba": "Primera diferencia + diferencia estacional (d=1, D=1)",
+        "estadistico": -6.148,
+        "p_valor": 0.0,
+        "lags": 11,
+        "n": 122,
+        "critico_5pct": -2.886,
+        "conclusion": "Estacionaria"
+      }
+    ],
+    "kpss": {
+      "estadistico": 0.168,
+      "p_valor": 0.1,
+      "conclusion": "Estacionaria"
+    }
+  },
+  {
+    "serie": "Via_Aérea",
+    "titulo": "Via de ingreso: Aerea",
+    "categoria": "Vias",
+    "inicio": "2009-01",
+    "fin": "2026-06",
+    "frecuencia": "Mensual (MS)",
+    "n_obs": 210,
+    "n_train": 147,
+    "n_test": 63,
+    "media_train": 89141.25507585192,
+    "cv_niveles": 0.3299535796286186,
+    "ratio_dispersion": 4.207473915292931,
+    "fuerza_tendencia": 0.791,
+    "fuerza_estacional": 0.575,
+    "fuerza_estacional_prepandemia": 0.875,
+    "crecimiento_prepandemia_pct": 53.33858177284441,
+    "usar_log": true,
+    "log1p": false,
+    "d": 1,
+    "D": 1,
+    "adf": [
+      {
+        "prueba": "Serie sin diferenciar",
+        "estadistico": -4.018,
+        "p_valor": 0.0013,
+        "lags": 3,
+        "n": 143,
+        "critico_5pct": -2.882,
+        "conclusion": "Estacionaria"
+      },
+      {
+        "prueba": "Primera diferencia (d=1)",
+        "estadistico": -3.214,
+        "p_valor": 0.0192,
+        "lags": 11,
+        "n": 134,
+        "critico_5pct": -2.883,
+        "conclusion": "Estacionaria"
+      },
+      {
+        "prueba": "Primera diferencia + diferencia estacional (d=1, D=1)",
+        "estadistico": -6.396,
+        "p_valor": 0.0,
+        "lags": 11,
+        "n": 122,
+        "critico_5pct": -2.886,
+        "conclusion": "Estacionaria"
+      }
+    ],
+    "kpss": {
+      "estadistico": 0.248,
+      "p_valor": 0.1,
+      "conclusion": "Estacionaria"
+    }
+  },
+  {
+    "serie": "Via_Terrestre",
+    "titulo": "Via de ingreso: Terrestre",
+    "categoria": "Vias",
+    "inicio": "2009-01",
+    "fin": "2026-06",
+    "frecuencia": "Mensual (MS)",
+    "n_obs": 210,
+    "n_train": 147,
+    "n_test": 63,
+    "media_train": 139988.46589101772,
+    "cv_niveles": 0.5166416297093889,
+    "ratio_dispersion": 8.721076721947162,
+    "fuerza_tendencia": 0.684,
+    "fuerza_estacional": 0.126,
+    "fuerza_estacional_prepandemia": 0.754,
+    "crecimiento_prepandemia_pct": 184.74694108483664,
+    "usar_log": true,
+    "log1p": false,
+    "d": 1,
+    "D": 1,
+    "adf": [
+      {
+        "prueba": "Serie sin diferenciar",
+        "estadistico": -1.442,
+        "p_valor": 0.5619,
+        "lags": 12,
+        "n": 134,
+        "critico_5pct": -2.883,
+        "conclusion": "No estacionaria"
+      },
+      {
+        "prueba": "Primera diferencia (d=1)",
+        "estadistico": -3.46,
+        "p_valor": 0.0091,
+        "lags": 11,
+        "n": 134,
+        "critico_5pct": -2.883,
+        "conclusion": "Estacionaria"
+      },
+      {
+        "prueba": "Primera diferencia + diferencia estacional (d=1, D=1)",
+        "estadistico": -5.626,
+        "p_valor": 0.0,
+        "lags": 11,
+        "n": 122,
+        "critico_5pct": -2.886,
+        "conclusion": "Estacionaria"
+      }
+    ],
+    "kpss": {
+      "estadistico": 0.21,
+      "p_valor": 0.1,
+      "conclusion": "Estacionaria"
+    }
+  },
+  {
+    "serie": "Via_Marítima",
+    "titulo": "Via de ingreso: Maritima",
+    "categoria": "Vias",
+    "inicio": "2009-01",
+    "fin": "2026-06",
+    "frecuencia": "Mensual (MS)",
+    "n_obs": 210,
+    "n_train": 147,
+    "n_test": 63,
+    "media_train": 7991.190476190476,
+    "cv_niveles": 0.8677490270631351,
+    "ratio_dispersion": 9568646102893.775,
+    "fuerza_tendencia": 0.309,
+    "fuerza_estacional": 0.61,
+    "fuerza_estacional_prepandemia": 0.229,
+    "crecimiento_prepandemia_pct": 51.30292340118634,
+    "usar_log": true,
+    "log1p": true,
+    "d": 1,
+    "D": 0,
+    "adf": [
+      {
+        "prueba": "Serie sin diferenciar",
+        "estadistico": 4.889,
+        "p_valor": 1.0,
+        "lags": 12,
+        "n": 134,
+        "critico_5pct": -2.883,
+        "conclusion": "No estacionaria"
+      },
+      {
+        "prueba": "Primera diferencia (d=1)",
+        "estadistico": -1.415,
+        "p_valor": 0.575,
+        "lags": 13,
+        "n": 132,
+        "critico_5pct": -2.884,
+        "conclusion": "No estacionaria"
+      },
+      {
+        "prueba": "Primera diferencia + diferencia estacional (d=1, D=1)",
+        "estadistico": -2.433,
+        "p_valor": 0.1327,
+        "lags": 10,
+        "n": 123,
+        "critico_5pct": -2.885,
+        "conclusion": "No estacionaria"
+      }
+    ],
+    "kpss": {
+      "estadistico": 0.666,
+      "p_valor": 0.0167,
+      "conclusion": "No estacionaria"
+    }
+  },
+  {
+    "serie": "Pais_ElSalvador",
+    "titulo": "Pais de residencia: El Salvador",
+    "categoria": "Paises",
+    "inicio": "2009-01",
+    "fin": "2026-06",
+    "frecuencia": "Mensual (MS)",
+    "n_obs": 210,
+    "n_train": 147,
+    "n_test": 63,
+    "media_train": 61502.012810111955,
+    "cv_niveles": 0.5479172887108373,
+    "ratio_dispersion": 16.776583224290615,
+    "fuerza_tendencia": 0.639,
+    "fuerza_estacional": 0.152,
+    "fuerza_estacional_prepandemia": 0.681,
+    "crecimiento_prepandemia_pct": 192.3972626152468,
+    "usar_log": true,
+    "log1p": true,
+    "d": 1,
+    "D": 1,
+    "adf": [
+      {
+        "prueba": "Serie sin diferenciar",
+        "estadistico": -1.697,
+        "p_valor": 0.4325,
+        "lags": 10,
+        "n": 136,
+        "critico_5pct": -2.883,
+        "conclusion": "No estacionaria"
+      },
+      {
+        "prueba": "Primera diferencia (d=1)",
+        "estadistico": -5.942,
+        "p_valor": 0.0,
+        "lags": 9,
+        "n": 136,
+        "critico_5pct": -2.883,
+        "conclusion": "Estacionaria"
+      },
+      {
+        "prueba": "Primera diferencia + diferencia estacional (d=1, D=1)",
+        "estadistico": -5.23,
+        "p_valor": 0.0,
+        "lags": 11,
+        "n": 122,
+        "critico_5pct": -2.886,
+        "conclusion": "Estacionaria"
+      }
+    ],
+    "kpss": {
+      "estadistico": 0.233,
+      "p_valor": 0.1,
+      "conclusion": "Estacionaria"
+    }
+  },
+  {
+    "serie": "Pais_Honduras",
+    "titulo": "Pais de residencia: Honduras",
+    "categoria": "Paises",
+    "inicio": "2009-01",
+    "fin": "2026-06",
+    "frecuencia": "Mensual (MS)",
+    "n_obs": 210,
+    "n_train": 147,
+    "n_test": 63,
+    "media_train": 9123.624599948811,
+    "cv_niveles": 0.4391117338892665,
+    "ratio_dispersion": 6.35652209578042,
+    "fuerza_tendencia": 0.663,
+    "fuerza_estacional": 0.386,
+    "fuerza_estacional_prepandemia": 0.597,
+    "crecimiento_prepandemia_pct": 105.90845868240328,
+    "usar_log": true,
+    "log1p": true,
+    "d": 1,
+    "D": 1,
+    "adf": [
+      {
+        "prueba": "Serie sin diferenciar",
+        "estadistico": -3.709,
+        "p_valor": 0.004,
+        "lags": 14,
+        "n": 132,
+        "critico_5pct": -2.884,
+        "conclusion": "Estacionaria"
+      },
+      {
+        "prueba": "Primera diferencia (d=1)",
+        "estadistico": -5.372,
+        "p_valor": 0.0,
+        "lags": 10,
+        "n": 135,
+        "critico_5pct": -2.883,
+        "conclusion": "Estacionaria"
+      },
+      {
+        "prueba": "Primera diferencia + diferencia estacional (d=1, D=1)",
+        "estadistico": -6.238,
+        "p_valor": 0.0,
+        "lags": 11,
+        "n": 122,
+        "critico_5pct": -2.886,
+        "conclusion": "Estacionaria"
+      }
+    ],
+    "kpss": {
+      "estadistico": 0.253,
+      "p_valor": 0.1,
+      "conclusion": "Estacionaria"
+    }
+  },
+  {
+    "serie": "Pais_EstadosUnidos",
+    "titulo": "Pais de residencia: Estados Unidos",
+    "categoria": "Paises",
+    "inicio": "2009-01",
+    "fin": "2026-06",
+    "frecuencia": "Mensual (MS)",
+    "n_obs": 210,
+    "n_train": 147,
+    "n_test": 63,
+    "media_train": 27955.115397417456,
+    "cv_niveles": 0.3957367722763906,
+    "ratio_dispersion": 2.6691499013495723,
+    "fuerza_tendencia": 0.53,
+    "fuerza_estacional": 0.512,
+    "fuerza_estacional_prepandemia": 0.926,
+    "crecimiento_prepandemia_pct": 51.92892670830209,
+    "usar_log": true,
+    "log1p": true,
+    "d": 1,
+    "D": 1,
+    "adf": [
+      {
+        "prueba": "Serie sin diferenciar",
+        "estadistico": -2.861,
+        "p_valor": 0.0501,
+        "lags": 12,
+        "n": 134,
+        "critico_5pct": -2.883,
+        "conclusion": "No estacionaria"
+      },
+      {
+        "prueba": "Primera diferencia (d=1)",
+        "estadistico": -3.047,
+        "p_valor": 0.0307,
+        "lags": 11,
+        "n": 134,
+        "critico_5pct": -2.883,
+        "conclusion": "Estacionaria"
+      },
+      {
+        "prueba": "Primera diferencia + diferencia estacional (d=1, D=1)",
+        "estadistico": -5.46,
+        "p_valor": 0.0,
+        "lags": 11,
+        "n": 122,
+        "critico_5pct": -2.886,
+        "conclusion": "Estacionaria"
+      }
+    ],
+    "kpss": {
+      "estadistico": 0.316,
+      "p_valor": 0.1,
+      "conclusion": "Estacionaria"
+    }
+  }
+]

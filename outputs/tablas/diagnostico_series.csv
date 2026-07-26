@@ -1,0 +1,8 @@
+serie,titulo,categoria,inicio,fin,frecuencia,n_obs,n_train,n_test,media_train,cv_niveles,ratio_dispersion,fuerza_tendencia,fuerza_estacional,fuerza_estacional_prepandemia,crecimiento_prepandemia_pct,usar_log,log1p,d,D
+Total,Total mensual de viajeros internacionales,Total,2009-01,2026-06,Mensual (MS),210,147,63,237120.91144306015,0.42968150884622813,6.951783085714156,0.789,0.394,0.837,119.02979695788241,True,False,1,1
+Via_Aérea,Via de ingreso: Aerea,Vias,2009-01,2026-06,Mensual (MS),210,147,63,89141.25507585192,0.3299535796286186,4.207473915292931,0.791,0.575,0.875,53.33858177284441,True,False,1,1
+Via_Terrestre,Via de ingreso: Terrestre,Vias,2009-01,2026-06,Mensual (MS),210,147,63,139988.46589101772,0.5166416297093889,8.721076721947162,0.684,0.126,0.754,184.74694108483664,True,False,1,1
+Via_Marítima,Via de ingreso: Maritima,Vias,2009-01,2026-06,Mensual (MS),210,147,63,7991.190476190476,0.8677490270631351,9568646102893.775,0.309,0.61,0.229,51.30292340118634,True,True,1,0
+Pais_ElSalvador,Pais de residencia: El Salvador,Paises,2009-01,2026-06,Mensual (MS),210,147,63,61502.012810111955,0.5479172887108373,16.776583224290615,0.639,0.152,0.681,192.3972626152468,True,True,1,1
+Pais_Honduras,Pais de residencia: Honduras,Paises,2009-01,2026-06,Mensual (MS),210,147,63,9123.624599948811,0.4391117338892665,6.35652209578042,0.663,0.386,0.597,105.90845868240328,True,True,1,1
+Pais_EstadosUnidos,Pais de residencia: Estados Unidos,Paises,2009-01,2026-06,Mensual (MS),210,147,63,27955.115397417456,0.3957367722763906,2.6691499013495723,0.53,0.512,0.926,51.92892670830209,True,True,1,1
