@@ -1,0 +1,8 @@
+serie,inicio,fin,n_obs,n_train,n_test,n_nulos,freq
+Total,2009-01,2026-06,210,147,63,0,MS
+Via_Aérea,2009-01,2026-06,210,147,63,0,MS
+Via_Terrestre,2009-01,2026-06,210,147,63,0,MS
+Via_Marítima,2009-01,2026-06,210,147,63,0,MS
+Pais_ElSalvador,2009-01,2026-06,210,147,63,0,MS
+Pais_Honduras,2009-01,2026-06,210,147,63,0,MS
+Pais_EstadosUnidos,2009-01,2026-06,210,147,63,0,MS

@@ -1,0 +1,187 @@
+======================================================================
+1. DESCRIPCION GENERAL DEL DATASET
+======================================================================
+Filas: 161,036  Columnas: 14
+Periodo cubierto: 2009-01 a 2026-06
+Meses distintos (Anio-Mes): 210 (esperado sin huecos = 210)
+
+Tipos de dato:
+Anio                         int64
+Mes_cod                      int64
+Mes                            str
+Via                            str
+Frontera                       str
+Pais                           str
+Region                         str
+Region_dos                     str
+Region_OMT                     str
+MCEO                           str
+Agrup_Residencia               str
+Tipo_Viajero                   str
+Viajero                    float64
+Fecha               datetime64[us]
+
+======================================================================
+2. VALORES FALTANTES, DUPLICADOS Y ATIPICOS
+======================================================================
+Valores nulos por columna:
+Anio                0
+Mes_cod             0
+Mes                 0
+Via                 0
+Frontera            0
+Pais                0
+Region              0
+Region_dos          0
+Region_OMT          0
+MCEO                0
+Agrup_Residencia    0
+Tipo_Viajero        0
+Viajero             0
+Fecha               0
+
+Filas totalmente duplicadas: 0
+
+Viajero == 0 (registros con conteo cero): 54
+Viajero < 0 (imposible): 0
+Viajero con decimales (estimaciones expandidas de encuesta, no error): 51272 filas (31.8%)
+
+Outliers (IQR, fila desagregada) por encima de 94.2: 26,390 (16.4%) -> esperado: filas desagregadas por pais/frontera/tipo tienen muchas colas largas (paises grandes como El Salvador, Honduras, EEUU dominan).
+
+Categorias inconsistentes detectadas en 'Region_dos':
+Region_dos
+Europa                         54640
+América Del Centro             31362
+América Del Sur y el Caribe    24734
+América Del Norte              17306
+Asia                           13247
+Otros Paises Del Mundo          8979
+Oceanía                         5746
+Oriente Medio                   4805
+Cruceristas                      196
+0                                 13
+Cruceros                           8
+ -> '0' y 'Cruceros' aparecen solo en 2022 (13 y 8 filas); 'Cruceristas' cubre 2009-2021.
+    Es un quiebre de codificacion, no un error aleatorio (ver hoja 'Notas' del archivo).
+
+======================================================================
+3. COMPORTAMIENTO TEMPORAL DEL NUMERO DE VIAJEROS
+======================================================================
+Min mensual: 9,779 en 2020-05
+Max mensual: 526,190 en 2022-12
+Promedio mensual: 248,990  Desv.Est: 100,744
+
+======================================================================
+4. PAISES CON MAYOR CANTIDAD DE VIAJEROS (acumulado 2009-2026)
+======================================================================
+Pais
+El Salvador                                        1.621398e+07
+Guatemala                                          1.479233e+07
+Estados Unidos de América                          7.047843e+06
+Honduras                                           2.788233e+06
+México                                             1.808946e+06
+Belice                                             1.328256e+06
+Nicaragua                                          1.164343e+06
+Cruceristas                                        1.078372e+06
+Costa Rica                                         8.821797e+05
+Colombia                                           5.610353e+05
+Canadá                                             5.262466e+05
+España                                             3.955236e+05
+Francia                                            3.382281e+05
+Alemania                                           3.004004e+05
+Reino Unido de Gran Bretaña e Irlanda del Norte    2.713677e+05
+
+Nota: desde 2023 'Pais' cambia a agrupacion de mercado (27 grupos) en vez de pais individual (226).
+Los 3 paises/agrupaciones con mayor acumulado historico (criterio del lab) son:
+Pais
+El Salvador                  1.621398e+07
+Guatemala                    1.479233e+07
+Estados Unidos de América    7.047843e+06
+
+======================================================================
+5. REGIONES CON MAYOR CANTIDAD DE VIAJEROS (Region dos, acumulado)
+======================================================================
+Region_dos
+América Del Centro             3.740653e+07
+América Del Norte              9.383035e+06
+Europa                         2.222621e+06
+América Del Sur y el Caribe    1.447950e+06
+Cruceristas                    1.078372e+06
+Asia                           4.217025e+05
+Oceanía                        1.400472e+05
+Oriente Medio                  1.357125e+05
+Cruceros                       2.603000e+04
+Otros Paises Del Mundo         2.511115e+04
+0                              8.210000e+02
+
+Las 3 regiones (Region dos) con mayor acumulado (criterio del lab):
+Region_dos
+América Del Centro    3.740653e+07
+América Del Norte     9.383035e+06
+Europa                2.222621e+06
+
+======================================================================
+6. VIAS DE INGRESO Y FRONTERAS MAS UTILIZADAS
+======================================================================
+Por Via:
+Via
+Terrestre    3.199530e+07
+Aérea        1.906385e+07
+Marítima     1.228782e+06
+
+% del total por via:
+Via
+Terrestre    61.19
+Aérea        36.46
+Marítima      2.35
+
+Top 10 Fronteras (acumulado):
+Frontera
+01 La Aurora                     1.903440e+07
+07 Valle Nuevo                   1.073234e+07
+09 San Cristóbal                 5.363009e+06
+08 Pedro de Alvarado             4.393577e+06
+10 La Ermita (Nueva Anguiatú)    2.879210e+06
+20 Melchor de Mencos             2.349551e+06
+13 El Cinchado / El Corinto      1.497006e+06
+12 El Florido                    1.221040e+06
+11 Agua Caliente                 1.154542e+06
+15 El Carmen                     1.023092e+06
+
+Las 3 fronteras con mayor acumulado (criterio del lab):
+Frontera
+01 La Aurora        1.903440e+07
+07 Valle Nuevo      1.073234e+07
+09 San Cristóbal    5.363009e+06
+
+======================================================================
+7. TIPO DE VIAJERO
+======================================================================
+Tipo_Viajero
+Turista          3.764273e+07
+Excursionista    9.069184e+06
+Viajero          4.471622e+06
+Cruceristas      1.104402e+06
+
+======================================================================
+8. ESTADISTICAS DESCRIPTIVAS
+======================================================================
+Variable 'Viajero' a nivel de fila desagregada (161,036 registros):
+count    161036.000000
+mean        324.697193
+std        2387.745140
+min           0.000000
+25%           2.000000
+50%           7.000000
+75%          38.891667
+max       92336.035067
+
+Variable 'Total mensual' (serie agregada, 210 meses):
+count       210.000000
+mean     248990.176637
+std      100744.492958
+min        9779.000000
+25%      184592.862436
+50%      250393.500000
+75%      315372.811698
+max      526190.000000
