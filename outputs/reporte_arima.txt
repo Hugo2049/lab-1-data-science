@@ -1,0 +1,116 @@
+==============================================================================
+SERIE: Total mensual de viajeros internacionales
+==============================================================================
+f) Transformacion: logaritmica. Diferenciacion fijada por las pruebas de raiz unitaria: d=1, D=1 (periodo 12).
+   Sobre esa base se exploran ordenes p,q en {0,1,2} y P,Q en {0,1}, comparables entre si por tener el mismo grado de diferenciacion.
+g) Se ajustaron 36 modelos. Los cinco mejores por AIC:
+                  modelo   AIC   BIC  ljung_box_p  jarque_bera_p
+SARIMA(2,1,2)(1,1,1)[12] 67.07 87.36       0.9997            0.0
+SARIMA(2,1,2)(0,1,1)[12] 67.51 84.90       0.9995            0.0
+SARIMA(1,1,2)(0,1,1)[12] 68.87 83.36       0.9958            0.0
+SARIMA(1,1,2)(1,1,1)[12] 69.19 86.57       0.9967            0.0
+SARIMA(2,1,2)(1,1,0)[12] 69.64 87.03       0.9945            0.0
+   Modelo elegido: SARIMA(2,1,2)(1,1,1)[12] - el de menor AIC entre los que dejan residuos sin autocorrelacion (Ljung-Box p=1.000 > 0.05).
+   Prediccion a 63 meses sobre el conjunto de prueba: MAE=249,738  RMSE=270,930  MAPE=84.6%
+
+==============================================================================
+SERIE: Via de ingreso: Aerea
+==============================================================================
+f) Transformacion: logaritmica. Diferenciacion fijada por las pruebas de raiz unitaria: d=1, D=1 (periodo 12).
+   Sobre esa base se exploran ordenes p,q en {0,1,2} y P,Q en {0,1}, comparables entre si por tener el mismo grado de diferenciacion.
+g) Se ajustaron 36 modelos. Los cinco mejores por AIC:
+                  modelo    AIC    BIC  ljung_box_p  jarque_bera_p
+SARIMA(2,1,2)(1,1,0)[12] 179.52 196.91       0.9140            0.0
+SARIMA(2,1,2)(1,1,1)[12] 181.17 201.46       0.9137            0.0
+SARIMA(0,1,1)(1,1,0)[12] 184.91 193.60       0.5947            0.0
+SARIMA(2,1,2)(0,1,0)[12] 185.42 199.91       0.9238            0.0
+SARIMA(1,1,0)(1,1,0)[12] 185.49 194.19       0.5801            0.0
+   Modelo elegido: SARIMA(2,1,2)(1,1,0)[12] - el de menor AIC entre los que dejan residuos sin autocorrelacion (Ljung-Box p=0.914 > 0.05).
+   Prediccion a 63 meses sobre el conjunto de prueba: MAE=80,842  RMSE=84,727  MAPE=84.8%
+
+==============================================================================
+SERIE: Via de ingreso: Terrestre
+==============================================================================
+f) Transformacion: logaritmica. Diferenciacion fijada por las pruebas de raiz unitaria: d=1, D=1 (periodo 12).
+   Sobre esa base se exploran ordenes p,q en {0,1,2} y P,Q en {0,1}, comparables entre si por tener el mismo grado de diferenciacion.
+g) Se ajustaron 36 modelos. Los cinco mejores por AIC:
+                  modelo    AIC    BIC  ljung_box_p  jarque_bera_p
+SARIMA(2,1,2)(0,1,1)[12] 128.61 145.99       0.4605            0.0
+SARIMA(2,1,2)(1,1,0)[12] 128.64 146.03       0.4583            0.0
+SARIMA(1,1,2)(1,1,0)[12] 129.48 143.97       0.2960            0.0
+SARIMA(0,1,1)(1,1,0)[12] 130.03 138.72       0.4399            0.0
+SARIMA(1,1,0)(1,1,0)[12] 130.06 138.76       0.4072            0.0
+   Modelo elegido: SARIMA(2,1,2)(0,1,1)[12] - el de menor AIC entre los que dejan residuos sin autocorrelacion (Ljung-Box p=0.461 > 0.05).
+   Prediccion a 63 meses sobre el conjunto de prueba: MAE=175,647  RMSE=191,523  MAPE=92.3%
+
+==============================================================================
+SERIE: Via de ingreso: Maritima
+==============================================================================
+f) Transformacion: logaritmica. Diferenciacion fijada por las pruebas de raiz unitaria: d=1, D=0 (periodo 12).
+   Sobre esa base se exploran ordenes p,q en {0,1,2} y P,Q en {0,1}, comparables entre si por tener el mismo grado de diferenciacion.
+g) Se ajustaron 36 modelos. Los cinco mejores por AIC:
+                  modelo    AIC    BIC  ljung_box_p  jarque_bera_p
+SARIMA(0,1,1)(1,0,1)[12] 607.97 619.90          0.0            0.0
+SARIMA(2,1,1)(1,0,1)[12] 609.68 627.58          0.0            0.0
+SARIMA(1,1,1)(1,0,1)[12] 609.94 624.86          0.0            0.0
+SARIMA(0,1,2)(1,0,1)[12] 609.95 624.87          0.0            0.0
+SARIMA(2,1,2)(1,0,1)[12] 611.67 632.56          0.0            0.0
+   Modelo elegido: SARIMA(0,1,1)(1,0,1)[12] - ningun candidato supera Ljung-Box, se toma el de menor AIC y se advierte autocorrelacion residual.
+   Prediccion a 63 meses sobre el conjunto de prueba: MAE=858  RMSE=1,732  MAPE=100.0%
+
+==============================================================================
+SERIE: Pais de residencia: El Salvador
+==============================================================================
+f) Transformacion: logaritmica. Diferenciacion fijada por las pruebas de raiz unitaria: d=1, D=1 (periodo 12).
+   Sobre esa base se exploran ordenes p,q en {0,1,2} y P,Q en {0,1}, comparables entre si por tener el mismo grado de diferenciacion.
+g) Se ajustaron 36 modelos. Los cinco mejores por AIC:
+                  modelo    AIC    BIC  ljung_box_p  jarque_bera_p
+SARIMA(2,1,0)(1,1,0)[12]   8.00  19.59       0.0000            NaN
+SARIMA(1,1,2)(0,1,0)[12] 449.30 460.89       0.1340            0.0
+SARIMA(1,1,2)(0,1,1)[12] 449.93 464.42       0.1297            0.0
+SARIMA(1,1,2)(1,1,0)[12] 450.20 464.69       0.1317            0.0
+SARIMA(2,1,2)(0,1,0)[12] 452.77 467.26       0.1912            0.0
+   Modelo elegido: SARIMA(1,1,2)(0,1,0)[12] - el de menor AIC entre los que dejan residuos sin autocorrelacion (Ljung-Box p=0.134 > 0.05).
+   Prediccion a 63 meses sobre el conjunto de prueba: MAE=113,647  RMSE=123,273  MAPE=99.3%
+
+==============================================================================
+SERIE: Pais de residencia: Honduras
+==============================================================================
+f) Transformacion: logaritmica. Diferenciacion fijada por las pruebas de raiz unitaria: d=1, D=1 (periodo 12).
+   Sobre esa base se exploran ordenes p,q en {0,1,2} y P,Q en {0,1}, comparables entre si por tener el mismo grado de diferenciacion.
+g) Se ajustaron 36 modelos. Los cinco mejores por AIC:
+                  modelo    AIC    BIC  ljung_box_p  jarque_bera_p
+SARIMA(2,1,2)(0,1,1)[12] 393.49 410.87       0.0572            0.0
+SARIMA(2,1,2)(1,1,0)[12] 393.51 410.89       0.0587            0.0
+SARIMA(2,1,2)(0,1,0)[12] 394.11 408.60       0.0973            0.0
+SARIMA(2,1,1)(0,1,1)[12] 395.19 409.68       0.0117            0.0
+SARIMA(2,1,1)(1,1,0)[12] 395.32 409.81       0.0121            0.0
+   Modelo elegido: SARIMA(2,1,2)(0,1,1)[12] - el de menor AIC entre los que dejan residuos sin autocorrelacion (Ljung-Box p=0.057 > 0.05).
+   Prediccion a 63 meses sobre el conjunto de prueba: MAE=21,401  RMSE=23,474  MAPE=91.5%
+
+==============================================================================
+SERIE: Pais de residencia: Estados Unidos
+==============================================================================
+f) Transformacion: logaritmica. Diferenciacion fijada por las pruebas de raiz unitaria: d=1, D=1 (periodo 12).
+   Sobre esa base se exploran ordenes p,q en {0,1,2} y P,Q en {0,1}, comparables entre si por tener el mismo grado de diferenciacion.
+g) Se ajustaron 36 modelos. Los cinco mejores por AIC:
+                  modelo    AIC    BIC  ljung_box_p  jarque_bera_p
+SARIMA(2,1,2)(0,1,0)[12] 390.46 404.95       0.5932            0.0
+SARIMA(2,1,2)(1,1,0)[12] 391.02 408.41       0.5769            0.0
+SARIMA(2,1,2)(0,1,1)[12] 391.29 408.68       0.5796            0.0
+SARIMA(2,1,2)(1,1,1)[12] 392.94 413.23       0.5774            0.0
+SARIMA(1,1,2)(0,1,0)[12] 398.29 409.88       0.1474            0.0
+   Modelo elegido: SARIMA(2,1,2)(0,1,0)[12] - el de menor AIC entre los que dejan residuos sin autocorrelacion (Ljung-Box p=0.593 > 0.05).
+   Prediccion a 63 meses sobre el conjunto de prueba: MAE=67,619  RMSE=121,026  MAPE=124.4%
+
+==============================================================================
+MEJOR MODELO ARIMA POR SERIE
+==============================================================================
+             serie                   modelo    AIC    BIC  ljung_box_p           MAE          RMSE       MAPE
+             Total SARIMA(2,1,2)(1,1,1)[12]  67.07  87.36       0.9997 249737.845302 270930.332452  84.633081
+         Via_Aérea SARIMA(2,1,2)(1,1,0)[12] 179.52 196.91       0.9140  80841.886558  84727.181175  84.821782
+     Via_Terrestre SARIMA(2,1,2)(0,1,1)[12] 128.61 145.99       0.4605 175646.687672 191522.918623  92.337116
+      Via_Marítima SARIMA(0,1,1)(1,0,1)[12] 607.97 619.90       0.0000    858.365079   1731.929693 100.000000
+   Pais_ElSalvador SARIMA(1,1,2)(0,1,0)[12] 449.30 460.89       0.1340 113647.176037 123272.984462  99.300371
+     Pais_Honduras SARIMA(2,1,2)(0,1,1)[12] 393.49 410.87       0.0572  21401.494431  23474.448072  91.542166
+Pais_EstadosUnidos SARIMA(2,1,2)(0,1,0)[12] 390.46 404.95       0.5932  67619.422031 121026.239793 124.434920
