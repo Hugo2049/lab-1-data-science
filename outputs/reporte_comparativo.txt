@@ -1,0 +1,41 @@
+==============================================================================
+PUNTO 5 - ANALISIS COMPARATIVO
+==============================================================================
+
+Indicadores calculados sobre las series completas (2009-2026). La
+estacionalidad y la volatilidad se miden en la etapa previa a marzo de 2020
+para que el desplome de la pandemia no contamine la comparacion.
+
+             serie  fuerza_estacional  amplitud_estacional_pct  cagr_prepandemia_pct  volatilidad_pct  caida_2020_pct  recuperacion_2025_pct
+             Total              0.839                     48.8                  9.10            20.02           -73.0                   76.7
+         Via_Aérea              0.865                     46.0                  4.93            17.06           -72.3                   80.2
+     Via_Terrestre              0.761                     49.6                 12.20            23.53           -73.6                   78.0
+      Via_Marítima              0.751                    196.0                  5.66           117.61           -67.9                    5.3
+   Pais_ElSalvador              0.682                     48.5                 11.94            26.55           -74.9                  126.8
+     Pais_Honduras              0.569                     41.5                  6.66            22.16           -75.3                  143.0
+Pais_EstadosUnidos              0.920                     91.0                  4.58            31.63           -73.7                  146.2
+
+==============================================================================
+CATEGORIA: Vias de ingreso
+==============================================================================
+i)   Mayor estacionalidad: Via de ingreso: Aerea (fuerza estacional 0.865, amplitud equivalente al 46.0% del nivel medio; pico en diciembre, valle en septiembre).
+ii)  Mayor tendencia de crecimiento: Via de ingreso: Terrestre (crecimiento anual compuesto de +12.20% entre 2009-2011 y 2017-2019).
+iii) Mayor volatilidad: Via de ingreso: Maritima (desviacion estandar de los cambios mensuales de 117.6%).
+iv)  Mas afectada por la pandemia: Via de ingreso: Terrestre (caida de -73.6% en 2020 frente a 2019; en 2025 recupero el 78.0% del nivel de 2019).
+
+==============================================================================
+CATEGORIA: Paises de residencia
+==============================================================================
+i)   Mayor estacionalidad: Pais de residencia: Estados Unidos (fuerza estacional 0.920, amplitud equivalente al 91.0% del nivel medio; pico en julio, valle en septiembre).
+ii)  Mayor tendencia de crecimiento: Pais de residencia: El Salvador (crecimiento anual compuesto de +11.94% entre 2009-2011 y 2017-2019).
+iii) Mayor volatilidad: Pais de residencia: Estados Unidos (desviacion estandar de los cambios mensuales de 31.6%).
+iv)  Mas afectada por la pandemia: Pais de residencia: Honduras (caida de -75.3% en 2020 frente a 2019; en 2025 recupero el 143.0% del nivel de 2019).
+
+==============================================================================
+HALLAZGOS PARA LA TOMA DE DECISIONES DEL INGUAT
+==============================================================================
+1. La demanda es marcadamente estacional: la serie total concentra su pico en diciembre y su valle en septiembre, con una amplitud equivalente al 48.8% del nivel medio. La planificacion de campanas y de capacidad hotelera deberia anclarse a ese calendario.
+2. La via aerea y la terrestre son negocios distintos: la aerea crece al +4.93% anual y la terrestre al +12.20%, con estacionalidades de distinta intensidad (0.86 frente a 0.76). Conviene fijar metas y presupuestos separados por via.
+3. La recuperacion pospandemia es desigual: en 2025 las vias alcanzaron entre 5% y 80% del nivel de 2019, y los mercados de origen entre 127% y 146%. El esfuerzo comercial deberia concentrarse en los segmentos que siguen por debajo de su nivel previo.
+4. Los modelos entrenados hasta marzo de 2021 no logran anticipar la recuperacion: todos los algoritmos subestiman fuertemente el conjunto de prueba. Para pronosticar el turismo pospandemia no basta con la historia previa, hay que reentrenar con datos posteriores a la reapertura o incorporar variables externas.
+5. El quiebre metodologico de 2023 cambia el nivel de la serie sin que exista una caida real de demanda. Cualquier meta institucional planteada sobre el total de viajeros debe usar Turista mas Excursionista, que si es comparable en todo el periodo.

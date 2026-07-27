@@ -1,0 +1,8 @@
+serie,titulo,categoria,fuerza_estacional,amplitud_estacional_pct,mes_pico,mes_valle,fuerza_tendencia,cagr_prepandemia_pct,volatilidad_pct,caida_2020_pct,piso_relativo_pct,recuperacion_2025_pct
+Total,Total mensual de viajeros internacionales,Total,0.839,48.8,12,9,0.96,9.1,20.02,-73.0,2.5,76.7
+Via_Aérea,Via de ingreso: Aerea,Vias,0.865,46.0,12,9,0.924,4.93,17.06,-72.3,0.4,80.2
+Via_Terrestre,Via de ingreso: Terrestre,Vias,0.761,49.6,12,10,0.947,12.2,23.53,-73.6,2.2,78.0
+Via_Marítima,Via de ingreso: Maritima,Vias,0.751,196.0,12,6,0.223,5.66,117.61,-67.9,0.0,5.3
+Pais_ElSalvador,Pais de residencia: El Salvador,Paises,0.682,48.5,12,9,0.911,11.94,26.55,-74.9,0.0,126.8
+Pais_Honduras,Pais de residencia: Honduras,Paises,0.569,41.5,1,2,0.893,6.66,22.16,-75.3,0.0,143.0
+Pais_EstadosUnidos,Pais de residencia: Estados Unidos,Paises,0.92,91.0,7,9,0.826,4.58,31.63,-73.7,0.0,146.2
