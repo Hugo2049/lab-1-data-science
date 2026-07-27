@@ -1,0 +1,123 @@
+==============================================================================
+SERIE: Total mensual de viajeros internacionales
+==============================================================================
+                          modelo     AIC     BIC           MAE          RMSE      MAPE
+                         Prophet     NaN     NaN 136571.236096 144938.957847 55.919711
+Suavizamiento exponencial simple -324.87 -318.89 175088.436503 194790.811786 58.114657
+                    Holt-Winters -347.99 -300.14 196955.754831 216456.832058 65.304328
+                  Seasonal naive     NaN     NaN 235730.913810 253203.387828 83.862362
+   Mejor de los cuatro por RMSE: Prophet
+
+==============================================================================
+SERIE: Via de ingreso: Aerea
+==============================================================================
+                          modelo     AIC     BIC          MAE         RMSE      MAPE
+Suavizamiento exponencial simple -216.07 -210.08 36108.526894 41367.771594 35.616698
+                         Prophet     NaN     NaN 42289.233077 47055.908900 43.199617
+                    Holt-Winters -221.71 -173.86 48044.835248 52232.698657 48.507632
+                  Seasonal naive     NaN     NaN 75103.700079 79077.334766 80.577826
+   Mejor de los cuatro por RMSE: Suavizamiento exponencial simple
+
+==============================================================================
+SERIE: Via de ingreso: Terrestre
+==============================================================================
+                          modelo     AIC    BIC           MAE          RMSE      MAPE
+                         Prophet     NaN    NaN  56786.561736  72570.150029 71.678597
+Suavizamiento exponencial simple -281.78 -275.8 140428.538099 156309.654364 71.751105
+                    Holt-Winters -279.04 -231.2 148023.786764 164246.592087 73.916120
+                  Seasonal naive     NaN    NaN 160013.007381 176652.992181 83.469347
+   Mejor de los cuatro por RMSE: Prophet
+
+==============================================================================
+SERIE: Via de ingreso: Maritima
+==============================================================================
+                          modelo    AIC    BIC         MAE        RMSE       MAPE
+Suavizamiento exponencial simple 212.16 218.14  858.364994 1731.929628  99.999979
+                    Holt-Winters 191.68 239.53  858.365079 1731.929693 100.000000
+                  Seasonal naive    NaN    NaN  858.365079 1731.929693 100.000000
+                         Prophet    NaN    NaN 4070.749262 5095.563123 653.740540
+   Mejor de los cuatro por RMSE: Suavizamiento exponencial simple
+
+==============================================================================
+SERIE: Pais de residencia: El Salvador
+==============================================================================
+                          modelo   AIC    BIC           MAE          RMSE      MAPE
+                         Prophet   NaN    NaN  52174.294427  55168.764906 81.076873
+Suavizamiento exponencial simple 66.51  72.49  94064.177420 104530.774300 74.318519
+                    Holt-Winters 86.03 133.88 101043.836151 111526.435746 81.049900
+                  Seasonal naive   NaN    NaN 107474.047258 117633.371952 91.598702
+   Mejor de los cuatro por RMSE: Prophet
+
+==============================================================================
+SERIE: Pais de residencia: Honduras
+==============================================================================
+                          modelo   AIC   BIC          MAE         RMSE      MAPE
+                         Prophet   NaN   NaN 13767.511842 15148.237483 64.415596
+Suavizamiento exponencial simple  4.42 10.40 17240.396185 19587.092524 66.051955
+                    Holt-Winters 15.68 63.53 18900.333741 21200.283326 74.165932
+                  Seasonal naive   NaN   NaN 21189.895732 23244.178673 90.953015
+   Mejor de los cuatro por RMSE: Prophet
+
+==============================================================================
+SERIE: Pais de residencia: Estados Unidos
+==============================================================================
+                          modelo   AIC   BIC          MAE         RMSE      MAPE
+Suavizamiento exponencial simple 20.06 26.04 25114.619397 28953.077650 49.926057
+                         Prophet   NaN   NaN 33106.394467 37531.344400 64.542896
+                    Holt-Winters 25.23 73.08 34196.886566 37643.882455 69.377796
+                  Seasonal naive   NaN   NaN 41167.828272 44196.197713 88.190613
+   Mejor de los cuatro por RMSE: Suavizamiento exponencial simple
+
+==============================================================================
+RESUMEN: MEJOR MODELO ALTERNATIVO POR SERIE (menor RMSE)
+==============================================================================
+             serie                           modelo           MAE          RMSE       MAPE
+             Total                          Prophet 136571.236096 144938.957847  55.919711
+         Via_Aérea                          Prophet  42289.233077  47055.908900  43.199617
+     Via_Terrestre                          Prophet  56786.561736  72570.150029  71.678597
+      Via_Marítima                          Prophet   4070.749262   5095.563123 653.740540
+   Pais_ElSalvador                          Prophet  52174.294427  55168.764906  81.076873
+     Pais_Honduras                          Prophet  13767.511842  15148.237483  64.415596
+Pais_EstadosUnidos                          Prophet  33106.394467  37531.344400  64.542896
+             Total Suavizamiento exponencial simple 175088.436503 194790.811786  58.114657
+         Via_Aérea Suavizamiento exponencial simple  36108.526894  41367.771594  35.616698
+     Via_Terrestre Suavizamiento exponencial simple 140428.538099 156309.654364  71.751105
+      Via_Marítima Suavizamiento exponencial simple    858.364994   1731.929628  99.999979
+   Pais_ElSalvador Suavizamiento exponencial simple  94064.177420 104530.774300  74.318519
+     Pais_Honduras Suavizamiento exponencial simple  17240.396185  19587.092524  66.051955
+Pais_EstadosUnidos Suavizamiento exponencial simple  25114.619397  28953.077650  49.926057
+             Total                          Prophet 136571.236096 144938.957847  55.919711
+         Via_Aérea                          Prophet  42289.233077  47055.908900  43.199617
+     Via_Terrestre                          Prophet  56786.561736  72570.150029  71.678597
+      Via_Marítima                          Prophet   4070.749262   5095.563123 653.740540
+   Pais_ElSalvador                          Prophet  52174.294427  55168.764906  81.076873
+     Pais_Honduras                          Prophet  13767.511842  15148.237483  64.415596
+Pais_EstadosUnidos                          Prophet  33106.394467  37531.344400  64.542896
+             Total                          Prophet 136571.236096 144938.957847  55.919711
+         Via_Aérea                          Prophet  42289.233077  47055.908900  43.199617
+     Via_Terrestre                          Prophet  56786.561736  72570.150029  71.678597
+      Via_Marítima                          Prophet   4070.749262   5095.563123 653.740540
+   Pais_ElSalvador                          Prophet  52174.294427  55168.764906  81.076873
+     Pais_Honduras                          Prophet  13767.511842  15148.237483  64.415596
+Pais_EstadosUnidos                          Prophet  33106.394467  37531.344400  64.542896
+             Total Suavizamiento exponencial simple 175088.436503 194790.811786  58.114657
+         Via_Aérea Suavizamiento exponencial simple  36108.526894  41367.771594  35.616698
+     Via_Terrestre Suavizamiento exponencial simple 140428.538099 156309.654364  71.751105
+      Via_Marítima Suavizamiento exponencial simple    858.364994   1731.929628  99.999979
+   Pais_ElSalvador Suavizamiento exponencial simple  94064.177420 104530.774300  74.318519
+     Pais_Honduras Suavizamiento exponencial simple  17240.396185  19587.092524  66.051955
+Pais_EstadosUnidos Suavizamiento exponencial simple  25114.619397  28953.077650  49.926057
+             Total Suavizamiento exponencial simple 175088.436503 194790.811786  58.114657
+         Via_Aérea Suavizamiento exponencial simple  36108.526894  41367.771594  35.616698
+     Via_Terrestre Suavizamiento exponencial simple 140428.538099 156309.654364  71.751105
+      Via_Marítima Suavizamiento exponencial simple    858.364994   1731.929628  99.999979
+   Pais_ElSalvador Suavizamiento exponencial simple  94064.177420 104530.774300  74.318519
+     Pais_Honduras Suavizamiento exponencial simple  17240.396185  19587.092524  66.051955
+Pais_EstadosUnidos Suavizamiento exponencial simple  25114.619397  28953.077650  49.926057
+             Total                          Prophet 136571.236096 144938.957847  55.919711
+         Via_Aérea                          Prophet  42289.233077  47055.908900  43.199617
+     Via_Terrestre                          Prophet  56786.561736  72570.150029  71.678597
+      Via_Marítima                          Prophet   4070.749262   5095.563123 653.740540
+   Pais_ElSalvador                          Prophet  52174.294427  55168.764906  81.076873
+     Pais_Honduras                          Prophet  13767.511842  15148.237483  64.415596
+Pais_EstadosUnidos                          Prophet  33106.394467  37531.344400  64.542896
