@@ -1,0 +1,8 @@
+serie,titulo,categoria,mejor_modelo,MAE,RMSE,MAPE
+Total,Total mensual de viajeros internacionales,Total,Prophet,136571.23609611095,144938.95784665731,55.919711406565966
+Via_Aérea,Via de ingreso: Aerea,Vias,Suavizamiento exponencial simple,36108.526893607566,41367.7715935686,35.61669760226632
+Via_Terrestre,Via de ingreso: Terrestre,Vias,Prophet,56786.561736037314,72570.15002915627,71.67859676211077
+Via_Marítima,Via de ingreso: Maritima,Vias,Suavizamiento exponencial simple,858.364994254083,1731.9296278437448,99.99997857115594
+Pais_ElSalvador,Pais de residencia: El Salvador,Paises,Prophet,52174.294427452885,55168.76490588608,81.0768727108003
+Pais_Honduras,Pais de residencia: Honduras,Paises,Prophet,13767.511842126163,15148.237483090074,64.41559608517059
+Pais_EstadosUnidos,Pais de residencia: Estados Unidos,Paises,Suavizamiento exponencial simple,25114.61939652087,28953.07765049577,49.92605693791277

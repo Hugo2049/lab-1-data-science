@@ -1,0 +1,36 @@
+serie,titulo,categoria,modelo,familia,AIC,BIC,MAE,RMSE,MAPE
+Total,Total mensual de viajeros internacionales,Total,"SARIMA(2,1,2)(1,1,1)[12]",ARIMA,67.07,87.36,249737.8453017256,270930.3324518302,84.63308075662609
+Via_Aérea,Via de ingreso: Aerea,Vias,"SARIMA(2,1,2)(1,1,0)[12]",ARIMA,179.52,196.91,80841.88655806528,84727.18117522055,84.82178240263444
+Via_Terrestre,Via de ingreso: Terrestre,Vias,"SARIMA(2,1,2)(0,1,1)[12]",ARIMA,128.61,145.99,175646.68767186717,191522.91862265448,92.33711579643324
+Via_Marítima,Via de ingreso: Maritima,Vias,"SARIMA(0,1,1)(1,0,1)[12]",ARIMA,607.97,619.9,858.3650793650794,1731.9296926600284,100.0
+Pais_ElSalvador,Pais de residencia: El Salvador,Paises,"SARIMA(1,1,2)(0,1,0)[12]",ARIMA,449.3,460.89,113647.17603689124,123272.98446235684,99.30037052644155
+Pais_Honduras,Pais de residencia: Honduras,Paises,"SARIMA(2,1,2)(0,1,1)[12]",ARIMA,393.49,410.87,21401.49443098942,23474.44807200038,91.54216574670936
+Pais_EstadosUnidos,Pais de residencia: Estados Unidos,Paises,"SARIMA(2,1,2)(0,1,0)[12]",ARIMA,390.46,404.95,67619.42203091751,121026.2397925933,124.43492003389368
+Total,Total mensual de viajeros internacionales,Total,Prophet,Prophet,,,136571.23609611095,144938.95784665731,55.919711406565966
+Total,Total mensual de viajeros internacionales,Total,Suavizamiento exponencial simple,Suavizamiento exponencial simple,-324.87,-318.89,175088.43650293272,194790.8117863206,58.11465732490868
+Total,Total mensual de viajeros internacionales,Total,Holt-Winters,Holt-Winters,-347.99,-300.14,196955.75483051807,216456.83205812317,65.30432767298201
+Total,Total mensual de viajeros internacionales,Total,Seasonal naive,Seasonal naive,,,235730.91380951655,253203.387827612,83.86236241315198
+Via_Aérea,Via de ingreso: Aerea,Vias,Suavizamiento exponencial simple,Suavizamiento exponencial simple,-216.07,-210.08,36108.526893607566,41367.7715935686,35.61669760226632
+Via_Aérea,Via de ingreso: Aerea,Vias,Prophet,Prophet,,,42289.23307694007,47055.908900095,43.19961710026482
+Via_Aérea,Via de ingreso: Aerea,Vias,Holt-Winters,Holt-Winters,-221.71,-173.86,48044.83524781429,52232.69865682649,48.50763152415964
+Via_Aérea,Via de ingreso: Aerea,Vias,Seasonal naive,Seasonal naive,,,75103.70007949528,79077.33476562955,80.57782599253824
+Via_Terrestre,Via de ingreso: Terrestre,Vias,Prophet,Prophet,,,56786.561736037314,72570.15002915627,71.67859676211077
+Via_Terrestre,Via de ingreso: Terrestre,Vias,Suavizamiento exponencial simple,Suavizamiento exponencial simple,-281.78,-275.8,140428.53809947084,156309.65436443113,71.75110493224251
+Via_Terrestre,Via de ingreso: Terrestre,Vias,Holt-Winters,Holt-Winters,-279.04,-231.2,148023.78676380962,164246.59208677252,73.91612012277417
+Via_Terrestre,Via de ingreso: Terrestre,Vias,Seasonal naive,Seasonal naive,,,160013.00738081493,176652.99218092876,83.46934657839164
+Via_Marítima,Via de ingreso: Maritima,Vias,Suavizamiento exponencial simple,Suavizamiento exponencial simple,212.16,218.14,858.364994254083,1731.9296278437448,99.99997857115594
+Via_Marítima,Via de ingreso: Maritima,Vias,Holt-Winters,Holt-Winters,191.68,239.53,858.3650793650794,1731.9296926600284,100.0
+Via_Marítima,Via de ingreso: Maritima,Vias,Seasonal naive,Seasonal naive,,,858.3650793650794,1731.9296926600284,100.0
+Via_Marítima,Via de ingreso: Maritima,Vias,Prophet,Prophet,,,4070.7492615929978,5095.563123246584,653.7405398099627
+Pais_ElSalvador,Pais de residencia: El Salvador,Paises,Prophet,Prophet,,,52174.294427452885,55168.76490588608,81.0768727108003
+Pais_ElSalvador,Pais de residencia: El Salvador,Paises,Suavizamiento exponencial simple,Suavizamiento exponencial simple,66.51,72.49,94064.17741979042,104530.77430015129,74.31851883670501
+Pais_ElSalvador,Pais de residencia: El Salvador,Paises,Holt-Winters,Holt-Winters,86.03,133.88,101043.83615117686,111526.43574625932,81.04990015700014
+Pais_ElSalvador,Pais de residencia: El Salvador,Paises,Seasonal naive,Seasonal naive,,,107474.0472580412,117633.3719518555,91.59870189188236
+Pais_Honduras,Pais de residencia: Honduras,Paises,Prophet,Prophet,,,13767.511842126163,15148.237483090074,64.41559608517059
+Pais_Honduras,Pais de residencia: Honduras,Paises,Suavizamiento exponencial simple,Suavizamiento exponencial simple,4.42,10.4,17240.396184971745,19587.09252406038,66.05195536750286
+Pais_Honduras,Pais de residencia: Honduras,Paises,Holt-Winters,Holt-Winters,15.68,63.53,18900.33374050492,21200.283325575343,74.16593214149174
+Pais_Honduras,Pais de residencia: Honduras,Paises,Seasonal naive,Seasonal naive,,,21189.895732345554,23244.17867306523,90.95301495185916
+Pais_EstadosUnidos,Pais de residencia: Estados Unidos,Paises,Suavizamiento exponencial simple,Suavizamiento exponencial simple,20.06,26.04,25114.61939652087,28953.07765049577,49.92605693791277
+Pais_EstadosUnidos,Pais de residencia: Estados Unidos,Paises,Prophet,Prophet,,,33106.39446683605,37531.34439996178,64.54289617562542
+Pais_EstadosUnidos,Pais de residencia: Estados Unidos,Paises,Holt-Winters,Holt-Winters,25.23,73.08,34196.8865660345,37643.882454732215,69.37779559860009
+Pais_EstadosUnidos,Pais de residencia: Estados Unidos,Paises,Seasonal naive,Seasonal naive,,,41167.82827202809,44196.19771348546,88.19061345036599

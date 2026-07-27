@@ -1,0 +1,85 @@
+==============================================================================
+COMPARACION DE MODELOS POR SERIE (conjunto de prueba: 2021-04 a 2026-06)
+==============================================================================
+Nota: AIC y BIC solo son comparables dentro de una misma familia y sobre la
+misma transformacion de la serie; el seasonal naive y Prophet no los reportan.
+
+--- Total mensual de viajeros internacionales ---
+                          modelo     AIC     BIC           MAE          RMSE      MAPE
+                         Prophet     NaN     NaN 136571.236096 144938.957847 55.919711
+Suavizamiento exponencial simple -324.87 -318.89 175088.436503 194790.811786 58.114657
+                    Holt-Winters -347.99 -300.14 196955.754831 216456.832058 65.304328
+                  Seasonal naive     NaN     NaN 235730.913810 253203.387828 83.862362
+        SARIMA(2,1,2)(1,1,1)[12]   67.07   87.36 249737.845302 270930.332452 84.633081
+    Mejor modelo por RMSE: Prophet (MAE=136,571, RMSE=144,939, MAPE=55.9%)
+
+--- Via de ingreso: Aerea ---
+                          modelo     AIC     BIC          MAE         RMSE      MAPE
+Suavizamiento exponencial simple -216.07 -210.08 36108.526894 41367.771594 35.616698
+                         Prophet     NaN     NaN 42289.233077 47055.908900 43.199617
+                    Holt-Winters -221.71 -173.86 48044.835248 52232.698657 48.507632
+                  Seasonal naive     NaN     NaN 75103.700079 79077.334766 80.577826
+        SARIMA(2,1,2)(1,1,0)[12]  179.52  196.91 80841.886558 84727.181175 84.821782
+    Mejor modelo por RMSE: Suavizamiento exponencial simple (MAE=36,109, RMSE=41,368, MAPE=35.6%)
+
+--- Via de ingreso: Terrestre ---
+                          modelo     AIC     BIC           MAE          RMSE      MAPE
+                         Prophet     NaN     NaN  56786.561736  72570.150029 71.678597
+Suavizamiento exponencial simple -281.78 -275.80 140428.538099 156309.654364 71.751105
+                    Holt-Winters -279.04 -231.20 148023.786764 164246.592087 73.916120
+                  Seasonal naive     NaN     NaN 160013.007381 176652.992181 83.469347
+        SARIMA(2,1,2)(0,1,1)[12]  128.61  145.99 175646.687672 191522.918623 92.337116
+    Mejor modelo por RMSE: Prophet (MAE=56,787, RMSE=72,570, MAPE=71.7%)
+
+--- Via de ingreso: Maritima ---
+                          modelo    AIC    BIC         MAE        RMSE       MAPE
+Suavizamiento exponencial simple 212.16 218.14  858.364994 1731.929628  99.999979
+        SARIMA(0,1,1)(1,0,1)[12] 607.97 619.90  858.365079 1731.929693 100.000000
+                    Holt-Winters 191.68 239.53  858.365079 1731.929693 100.000000
+                  Seasonal naive    NaN    NaN  858.365079 1731.929693 100.000000
+                         Prophet    NaN    NaN 4070.749262 5095.563123 653.740540
+    Mejor modelo por RMSE: Suavizamiento exponencial simple (MAE=858, RMSE=1,732, MAPE=100.0%)
+
+--- Pais de residencia: El Salvador ---
+                          modelo    AIC    BIC           MAE          RMSE      MAPE
+                         Prophet    NaN    NaN  52174.294427  55168.764906 81.076873
+Suavizamiento exponencial simple  66.51  72.49  94064.177420 104530.774300 74.318519
+                    Holt-Winters  86.03 133.88 101043.836151 111526.435746 81.049900
+                  Seasonal naive    NaN    NaN 107474.047258 117633.371952 91.598702
+        SARIMA(1,1,2)(0,1,0)[12] 449.30 460.89 113647.176037 123272.984462 99.300371
+    Mejor modelo por RMSE: Prophet (MAE=52,174, RMSE=55,169, MAPE=81.1%)
+
+--- Pais de residencia: Honduras ---
+                          modelo    AIC    BIC          MAE         RMSE      MAPE
+                         Prophet    NaN    NaN 13767.511842 15148.237483 64.415596
+Suavizamiento exponencial simple   4.42  10.40 17240.396185 19587.092524 66.051955
+                    Holt-Winters  15.68  63.53 18900.333741 21200.283326 74.165932
+                  Seasonal naive    NaN    NaN 21189.895732 23244.178673 90.953015
+        SARIMA(2,1,2)(0,1,1)[12] 393.49 410.87 21401.494431 23474.448072 91.542166
+    Mejor modelo por RMSE: Prophet (MAE=13,768, RMSE=15,148, MAPE=64.4%)
+
+--- Pais de residencia: Estados Unidos ---
+                          modelo    AIC    BIC          MAE          RMSE       MAPE
+Suavizamiento exponencial simple  20.06  26.04 25114.619397  28953.077650  49.926057
+                         Prophet    NaN    NaN 33106.394467  37531.344400  64.542896
+                    Holt-Winters  25.23  73.08 34196.886566  37643.882455  69.377796
+                  Seasonal naive    NaN    NaN 41167.828272  44196.197713  88.190613
+        SARIMA(2,1,2)(0,1,0)[12] 390.46 404.95 67619.422031 121026.239793 124.434920
+    Mejor modelo por RMSE: Suavizamiento exponencial simple (MAE=25,115, RMSE=28,953, MAPE=49.9%)
+
+==============================================================================
+MEJOR MODELO POR SERIE
+==============================================================================
+             serie                     mejor_modelo           MAE          RMSE      MAPE
+             Total                          Prophet 136571.236096 144938.957847 55.919711
+         Via_Aérea Suavizamiento exponencial simple  36108.526894  41367.771594 35.616698
+     Via_Terrestre                          Prophet  56786.561736  72570.150029 71.678597
+      Via_Marítima Suavizamiento exponencial simple    858.364994   1731.929628 99.999979
+   Pais_ElSalvador                          Prophet  52174.294427  55168.764906 81.076873
+     Pais_Honduras                          Prophet  13767.511842  15148.237483 64.415596
+Pais_EstadosUnidos Suavizamiento exponencial simple  25114.619397  28953.077650 49.926057
+
+Veces que cada algoritmo resulta el mejor:
+mejor_modelo
+Prophet                             4
+Suavizamiento exponencial simple    3
