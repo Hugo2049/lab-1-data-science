@@ -1,0 +1,8 @@
+serie,cluster_k2,cluster_k3,categoria
+Total,1,0,Total
+Via_Aérea,1,0,Vias
+Via_Terrestre,0,1,Vias
+Via_Marítima,1,0,Vias
+Pais_ElSalvador,0,1,Paises
+Pais_Honduras,0,1,Paises
+Pais_EstadosUnidos,0,2,Paises
