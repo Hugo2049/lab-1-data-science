@@ -7,10 +7,10 @@ import os
 import sys
 
 BASE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))          # .../laboratorio2
-REPO_ROOT = os.path.dirname(BASE)                                           # repo root
-LAB1_SCRIPTS = os.path.join(REPO_ROOT, "scripts")
-LAB1_SERIES = os.path.join(REPO_ROOT, "outputs", "series")
-LAB1_TABLAS = os.path.join(REPO_ROOT, "outputs", "tablas")
+LAB1_BASE = os.path.join(os.path.dirname(BASE), "laboratorio1")
+LAB1_SCRIPTS = os.path.join(LAB1_BASE, "scripts")
+LAB1_SERIES = os.path.join(LAB1_BASE, "outputs", "series")
+LAB1_TABLAS = os.path.join(LAB1_BASE, "outputs", "tablas")
 
 OUT = os.path.join(BASE, "outputs")
 

@@ -15,18 +15,19 @@ Repositorio del curso CC3084 Data Science, Universidad del Valle de Guatemala, S
 Analisis de series de tiempo sobre el ingreso de viajeros internacionales a Guatemala
 (enero 2009 - junio 2026).
 
-**Entregable:** [`informe/Laboratorio1_SeriesDeTiempo.pdf`](informe/Laboratorio1_SeriesDeTiempo.pdf)
+**Entregable:** [`laboratorio1/informe/Laboratorio1_SeriesDeTiempo.pdf`](laboratorio1/informe/Laboratorio1_SeriesDeTiempo.pdf)
 
 ```
-scripts/          Scripts Python (EDA, ARIMA, Prophet, comparacion)
-outputs/          Figuras, tablas y predicciones generadas
-informe/          Informe final en HTML y PDF
+laboratorio1/
+  scripts/          Scripts Python (EDA, ARIMA, Prophet, comparacion)
+  outputs/          Figuras, tablas y predicciones generadas
+  informe/          Informe final en HTML y PDF
 ```
 
 ```bash
 pip install -r requirements.txt
-python scripts/01_eda.py
-# ... scripts 02 a 08 en orden (ver laboratorio1 en scripts/)
+python laboratorio1/scripts/01_eda.py
+# ... scripts 02 a 08 en orden
 ```
 
 ---

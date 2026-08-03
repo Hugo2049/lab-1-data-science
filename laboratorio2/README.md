@@ -22,7 +22,7 @@ outputs/
   lstm/                        Predicciones y metricas de los modelos LSTM
 ```
 
-Las series de tiempo (train/test) se leen de `../outputs/series/`, generadas en el Laboratorio 1.
+Las series de tiempo (train/test) se leen de `../laboratorio1/outputs/series/`, generadas en el Laboratorio 1.
 
 ## Entorno
 
