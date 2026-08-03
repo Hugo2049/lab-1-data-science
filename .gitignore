@@ -152,11 +152,16 @@ activemq-data/
 .env
 .envrc
 .venv
+.venv310
 env/
 venv/
 ENV/
 env.bak/
 venv.bak/
+
+# Lab 2 staging (nested zip extract, not part of the repo)
+lab2/
+lab2.zip
 
 # Spyder project settings
 .spyderproject
