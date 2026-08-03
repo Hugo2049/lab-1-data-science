@@ -1,8 +1,6 @@
-# Laboratorio 1 - Series de Tiempo
+# Laboratorios CC3084 - Data Science
 
-Analisis de series de tiempo sobre el ingreso de viajeros internacionales a Guatemala
-(enero 2009 - junio 2026), para el curso CC3084 Data Science de la Universidad del Valle
-de Guatemala, Semestre II 2026.
+Repositorio del curso CC3084 Data Science, Universidad del Valle de Guatemala, Semestre II 2026.
 
 ## Integrantes
 
@@ -10,63 +8,43 @@ de Guatemala, Semestre II 2026.
 - Jose Pablo Lopez
 - Luis Palacios
 
-## Entregable
+---
 
-El informe final esta en [`informe/Laboratorio1_SeriesDeTiempo.pdf`](informe/Laboratorio1_SeriesDeTiempo.pdf).
-No contiene codigo: todos los analisis, tablas y graficos se generan con los scripts de
-`scripts/` y el informe los incorpora ya renderizados.
+## Laboratorio 1 - Series de Tiempo
 
-## Datos
+Analisis de series de tiempo sobre el ingreso de viajeros internacionales a Guatemala
+(enero 2009 - junio 2026).
 
-`Base_Migracion_2009-2026jun.xlsx`, hoja `Datos` (161,036 filas) y hoja `Notas` con las
-consideraciones metodologicas de la fuente. Los datos son de uso exclusivamente academico
-y no corresponden a cifras oficiales del INGUAT ni del Instituto Guatemalteco de Migracion.
-
-## Series analizadas
-
-Ademas de la serie obligatoria se eligieron dos categorias de analisis, para un total de
-siete series mensuales de 210 observaciones:
-
-| Categoria | Series |
-|---|---|
-| Total | Total mensual de viajeros |
-| Vias de ingreso | Aerea, Terrestre, Maritima |
-| Paises de residencia | El Salvador, Honduras, Estados Unidos |
-
-La particion es cronologica: entrenamiento de 2009-01 a 2021-03 (147 meses, 70%) y prueba
-de 2021-04 a 2026-06 (63 meses, 30%).
-
-## Estructura
+**Entregable:** [`informe/Laboratorio1_SeriesDeTiempo.pdf`](informe/Laboratorio1_SeriesDeTiempo.pdf)
 
 ```
-scripts/
-  lab_utils.py                  Rutas, catalogo de series, carga y metricas de error
-  01_eda.py                     Analisis exploratorio (punto 1)
-  02_series_construccion.py     Particion 70/30 y construccion de las series (puntos 2 y 3)
-  03_analisis_series.py         Estacionariedad, descomposicion, ACF/PACF y ADF (punto 4 a-e)
-  04_modelos_arima.py           Modelos ARIMA/SARIMA, residuos, AIC y BIC (punto 4 f-g)
-  05_modelos_alternativos.py    Prophet, Holt-Winters, suavizamiento simple y seasonal naive (punto 4 h)
-  06_comparacion_modelos.py     Predicciones y comparacion por MAE, RMSE y MAPE (punto 4 i-k)
-  07_analisis_comparativo.py    Comparacion entre series (punto 5)
-  08_build_report.py            Genera el informe HTML y lo exporta a PDF
-outputs/                        Figuras, tablas y predicciones generadas
-informe/                        Informe final en HTML y PDF
+scripts/          Scripts Python (EDA, ARIMA, Prophet, comparacion)
+outputs/          Figuras, tablas y predicciones generadas
+informe/          Informe final en HTML y PDF
 ```
-
-## Reproducir
 
 ```bash
 pip install -r requirements.txt
 python scripts/01_eda.py
-python scripts/02_series_construccion.py
-python scripts/03_analisis_series.py
-python scripts/04_modelos_arima.py
-python scripts/05_modelos_alternativos.py
-python scripts/06_comparacion_modelos.py
-python scripts/07_analisis_comparativo.py
-python scripts/08_build_report.py
+# ... scripts 02 a 08 en orden (ver laboratorio1 en scripts/)
 ```
 
-Los scripts deben correrse en ese orden: cada uno consume las salidas del anterior. El
-ultimo paso requiere Chrome o Edge instalado para exportar el PDF; si no los encuentra,
-deja el HTML listo para imprimirlo a PDF manualmente.
+---
+
+## Laboratorio 2 - Deep Learning
+
+Modelos LSTM y analisis de similitud con catch22 sobre las mismas series del Lab 1.
+
+**Entregables:** notebooks en [`laboratorio2/scripts/`](laboratorio2/scripts/) con analisis y resultados.
+
+```
+laboratorio2/
+  scripts/
+    01_lstm_avance.ipynb       Ejercicio 1: LSTM + comparacion vs Lab 1
+    02_catch22_analisis.ipynb  Ejercicio 2: catch22, PCA, clustering, LSTM con features
+  outputs/                     Tablas y figuras generadas
+```
+
+Requiere Python 3.10 y las dependencias de [`laboratorio2/requirements.txt`](laboratorio2/requirements.txt).
+Ver instrucciones de entorno en [`laboratorio2/README.md`](laboratorio2/README.md).
+
